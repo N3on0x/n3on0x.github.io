@@ -4,6 +4,22 @@ CSS RESET / STARTER
 
 */
 
+:root {
+  --background: #101010;
+  --text-bold: #b39802;
+  --border: #222222;
+  --default-text: whitesmoke;
+  --default-icon-theme-mode: black;
+}
+
+[theme-mode="light"]{
+  --background: #C4C4C4;
+  --border: #949494;
+  --default-text: black;
+  --text-bold: #4C0099;
+  --default-icon-theme-mode: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +35,7 @@ ul {
 }
 
 body {
-  background-color: #101010;
+  background-color: var(--background);
   font-family: "Courier New", monospace;
   display: flex;
   flex-direction: column;
@@ -34,7 +50,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px dotted #222222;
+  border-bottom: 2px dotted var(--border);
 
   position: relative;
 }
@@ -44,25 +60,31 @@ header {
 }
 
 .icon {
-  color: whitesmoke;
+  color: var(--default-text);
 }
 
 .icon:hover {
-  color: #b39802;
+  color: var(--text-bold);
 }
 
-#lightMode {
+#btn-mode-toggle {
     position: absolute;
     right: 2%;
+    background-color: var(--text-bold);
+    color: var(--default-icon-theme-mode);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    padding: 2px;
 }
 
 .terminal {
-  border: 1px solid #222222;
+  border: 1px solid var(--border);
   border-radius: 4px;
   padding: 20px;
   width: 70%;
   min-height: 560px;
-  color: whitesmoke;
+  color: var(--default-text);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -72,7 +94,7 @@ header {
 }
 
 .fileRead {
-  color: whitesmoke;
+  color: var(--default-text);
   width: 100%;
   max-width: 800px;
   padding: 30px;
@@ -83,21 +105,25 @@ header {
 }
 
 .directoryTextModify {
-  color: #b39802;
+  color: var(--text-bold);
   font-weight: bold;
   font-size: large;
 }
 
 .fileTextModify {
-  color: #b39802;
+  color: var(--text-bold);
 }
 
 .directoryTextModify:hover {
-  color: whitesmoke;
+  color: var(--default-text);
 }
 
 .fileTextModify:hover {
-  color: whitesmoke;
+  color: var(--default-text);
+}
+
+.cursorTextModify {
+  color: var(--text-bold);
 }
 
 .cursorBlock {
@@ -115,25 +141,25 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  color: whitesmoke;
+  color: var(--default-text);
   padding: 0 0 20px;
 }
 
 .signature {
-  color: #b39802;
+  color: var(--text-bold);
   font-weight: bold;
 }
 
 .signature:hover {
-  color: whitesmoke;
+  color: var(--default-text);
 }
 
 @keyframes blink {
   0% {
-    background: #ffffff;
+    background: var(--default-text);
   }
   49% {
-    background: #ffffff;
+    background: var(--default-text);
   }
   60% {
     background: transparent;
@@ -142,7 +168,7 @@ footer {
     background: transparent;
   }
   100% {
-    background: #ffffff;
+    background: var(--default-text);
   }
 }
 
