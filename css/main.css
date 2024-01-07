@@ -1,0 +1,165 @@
+/* 
+
+CSS RESET / STARTER
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #101010;
+  font-family: "Courier New", monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  padding: 15px 0 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px dotted #222222;
+
+  position: relative;
+}
+
+.social {
+  font-size: 24px;
+}
+
+.icon {
+  color: whitesmoke;
+}
+
+.icon:hover {
+  color: #b39802;
+}
+
+#lightMode {
+    position: absolute;
+    right: 2%;
+}
+
+.terminal {
+  border: 1px solid #222222;
+  border-radius: 4px;
+  padding: 20px;
+  width: 70%;
+  min-height: 560px;
+  color: whitesmoke;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+
+  margin: 20px 0;
+}
+
+.fileRead {
+  color: whitesmoke;
+  width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+.directoryTextModify {
+  color: #b39802;
+  font-weight: bold;
+  font-size: large;
+}
+
+.fileTextModify {
+  color: #b39802;
+}
+
+.directoryTextModify:hover {
+  color: whitesmoke;
+}
+
+.fileTextModify:hover {
+  color: whitesmoke;
+}
+
+.cursorBlock {
+  display: inline-block;
+  height: 17px;
+  width: 8px;
+  margin-left: 1px;
+  animation: blink 1200ms linear infinite;
+  vertical-align: text-bottom;
+}
+
+footer {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: whitesmoke;
+  padding: 0 0 20px;
+}
+
+.signature {
+  color: #b39802;
+  font-weight: bold;
+}
+
+.signature:hover {
+  color: whitesmoke;
+}
+
+@keyframes blink {
+  0% {
+    background: #ffffff;
+  }
+  49% {
+    background: #ffffff;
+  }
+  60% {
+    background: transparent;
+  }
+  99% {
+    background: transparent;
+  }
+  100% {
+    background: #ffffff;
+  }
+}
+
+@media(max-width: 750px) {
+  body {
+    height: 80vh;
+  }
+  .terminal {
+    border: 0px solid whitesmoke;
+    width: 90%;
+    margin-right: 50px;
+    margin-bottom: 200px;
+  }
+}
+
+@media(max-height: 1115px) {
+  .terminal {
+    height: 800px;
+  }
+}
