@@ -22,4 +22,12 @@ function themeController(theme) {
 
 }
 
+function returnController(){
+    document.getElementById("btn-return").addEventListener("click", () => {
+        history.back();
+    })
+}
+
+returnController()
+
 themeController(themeSystem)

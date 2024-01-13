@@ -5,19 +5,19 @@ CSS RESET / STARTER
 */
 
 :root {
-  --background: #101010;
-  --text-bold: #b39802;
-  --border: #222222;
-  --default-text: whitesmoke;
-  --default-icon-theme-mode: black;
+  --background: #161A1D;
+  --text-bold: #8c9440;
+  --border: #272727;
+  --default-text: #c5c8c6;
+  --default-icon-theme-mode: #c5c8c6;
 }
 
 [theme-mode="light"]{
-  --background: #C4C4C4;
-  --border: #949494;
-  --default-text: black;
-  --text-bold: #4C0099;
-  --default-icon-theme-mode: white;
+  --background: #c8cfd4;
+  --border: #bababa;
+  --default-text: #161A1D;
+  --text-bold: #5b641b;
+  --default-icon-theme-mode: #161A1D;
 }
 
 * {
@@ -37,6 +37,7 @@ ul {
 body {
   background-color: var(--background);
   font-family: "Courier New", monospace;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -67,15 +68,32 @@ header {
   color: var(--text-bold);
 }
 
+#btn-return {
+  position: absolute;
+  left: 2%;
+  padding: 2px;
+  border: none;
+  cursor: pointer;
+
+  color: var(--default-icon-theme-mode);
+}
+
+#btn-return:hover {
+  color: var(--text-bold);
+}
+
 #btn-mode-toggle {
     position: absolute;
     right: 2%;
-    background-color: var(--text-bold);
+    background-color: var(--background);
     color: var(--default-icon-theme-mode);
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
+    border: none;
     padding: 2px;
+    cursor: pointer;
+}
+
+#btn-mode-toggle:hover {
+  color: var(--text-bold);
 }
 
 .terminal {
