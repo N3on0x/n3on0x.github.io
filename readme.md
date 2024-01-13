@@ -2,6 +2,6 @@
 
 ## The interface is designed to look like a terminal.
 
-![Interface printscreen](/assets/readme-assets/interface-screenshot.png)
+![Interface printscreen](/assets/readme-assets/screenpage.gif)
 
 ### The website features a button to switch to light mode if preferred. The button is located in the upper-right corner.
