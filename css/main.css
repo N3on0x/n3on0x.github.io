@@ -4,6 +4,8 @@ CSS RESET / STARTER
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 :root {
   --background: #161A1D;
   --text-bold: #8c9440;
@@ -36,8 +38,8 @@ ul {
 
 body {
   background-color: var(--background);
-  font-family: "Courier New", monospace;
-  font-size: 18px;
+  font-family: "VT323", monospace;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
